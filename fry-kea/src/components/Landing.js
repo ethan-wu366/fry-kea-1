@@ -1,6 +1,8 @@
 import React from 'react';
 import $ from 'jquery';
 
+import SiteNavbar from './SiteNavbar';
+
 import '../css/Landing.css';
 
 const Landing = () => {
@@ -30,7 +32,11 @@ const Landing = () => {
 		});
 	});
 	return (
-        <p>Hello</p>
+        <div classname="landing">
+            <SiteNavbar sticky="false" bg="transparent" />
+            <p>Hello</p>
+        </div>
+        
         );
 };
 
