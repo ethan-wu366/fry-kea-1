@@ -1,0 +1,77 @@
+{
+  "listings": [
+    {
+      "id": 1,
+      "name": "Apple Armchair",
+      "image": "./img/apple-armchair.png",
+      "description": "Super tasty armchair that will keep your healthcare bill way down.",
+      "tags": ["Apple", "Doctor-Repellent", "Red"],
+      "price": 499.0,
+      "stocked": "yes",
+      "reviews": [
+        {
+          "content": "Tried to eat it but didn’t work >:(",
+          "author": "big_potato_420",
+          "posted": "Feb 1, 2020"
+        },
+        {
+          "content": "Hold the line!!!",
+          "author": "gamestop_fan",
+          "posted": "Feb 5, 2020"
+        },
+        {
+          "content": "wee woo i love furniture",
+          "author": "tijmen_sep",
+          "posted": "Feb 11, 2020"
+        },
+        {
+          "content": "b i g c h u n g u s",
+          "author": "big_chungus",
+          "posted": "Feb 11, 2020"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Starfruit Stool",
+      "image": "./img/starfruit-stool.png",
+      "description": "An extremely useful - and tasty - seating apparatus",
+      "tags": ["Stylish", "Chair", "Fruity AF"],
+      "price": 349.0,
+      "stocked": "no",
+      "reviews": [
+        {
+          "content": "long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment long comment",
+          "author": "troll_lol",
+          "posted": "Feb 18, 2020"
+        },
+        {
+          "content": "follow up comment",
+          "author": "troll_lol",
+          "posted": "Feb 12, 2021"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Clementine Clock",
+      "image": "./img/clementine-clock.png",
+      "description": "Be able to tell time while staring into the abyss of an extremely tasty orange time-telling device that actually isn't orange or a mandarin but actually a clementine. What is a clementine you may ask? Well I honestly don't know what to tell you, a clementine can have many meanings depending on the culture but typically in western english-speaking countries that have 50 states they are basically the same thing as oranges. Where do they differ you may ask? Well I'd have to google that but I don;t currently have an internet connection. Hopefully this lenghty description didn't mess with your formatting! ;) #clock #orange #wdb #long",
+      "tags": ["Time", "Orange", "Discounted"],
+      "price": 99.0,
+      "stocked": "yes",
+      "reviews": [
+        {
+          "content": "This clock can only exist in 4 possible futures.",
+          "author": "doctor_stange",
+          "posted": "Dec 1, 2025"
+        },
+        {
+          "content": "this here clock is right magnificient it is",
+          "author": "ur_mum",
+          "posted": "Oct 20, 1989"
+        }
+      ]
+    }
+  ]
+}
