@@ -1,0 +1,13 @@
+.landing rectangle {
+    background: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
+    border-radius: 7px;
+}
+
+.landing top {
+    position: absolute;
+    width: 1166px;
+    height: 330px;
+    left: 377px;
+    top: 178px;
+}

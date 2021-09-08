@@ -5,6 +5,10 @@ import SiteNavbar from './SiteNavbar';
 
 import '../css/Landing.css';
 
+import Apple from '../img/apple-armchair.png';
+import Clementine from '../img/clementine-clock.png';
+import Starfruit from '../img/starfruit-stool.png';
+
 const Landing = () => {
 	$(document).ready(function () {
 		/* Check the location of each desired element */
@@ -35,6 +39,13 @@ const Landing = () => {
         <div classname="landing">
             <SiteNavbar sticky="false" bg="transparent" />
             <p>Hello</p>
+			<div classname="rectangle top">
+			<img
+					src={Apple}
+					alt="apple"
+					className="landing-logo selectDisable"
+				/>
+			</div>
         </div>
         
         );
