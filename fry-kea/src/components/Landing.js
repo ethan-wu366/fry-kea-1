@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import $ from 'jquery';
 
 import SiteNavbar from './SiteNavbar';
-import { ItemData } from '../Data.json';
-import { stockData } from '../TestData';
+import ItemData from '../Data.json';
+
 
 import '../css/Landing.css';
 
 import Apple from '../img/apple-armchair.png';
 import Clementine from '../img/clementine-clock.png';
 import Starfruit from '../img/starfruit-stool.png';
+
+import Cards from './Cards';
 
 const Landing = () => {
 	$(document).ready(function () {
@@ -41,25 +43,13 @@ const Landing = () => {
         <div classname="landing">
             <SiteNavbar sticky="false" bg="transparent" />
             <p>Hello</p>
+			<Cards></Cards>
 			<div classname="rectangle top">
 			<img
 					src={Apple}
 					alt="apple"
 					className="landing-logo selectDisable"
 				/>
-				{stockData.map((data,key) => {
-					return (
-						<div key={key}>
-							{data.company +
-								" , " +
-								data.ticker +
-								" ," +
-								data.stockPrice +
-								", " +
-								data.timeElapsed}
-							</div>
-					)	
-				})}
 			</div>
         </div>
         
