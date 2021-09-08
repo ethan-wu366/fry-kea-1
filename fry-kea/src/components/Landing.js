@@ -2,6 +2,8 @@ import React from 'react';
 import $ from 'jquery';
 
 import SiteNavbar from './SiteNavbar';
+import { ItemData } from '../Data.json';
+import { stockData } from '../TestData';
 
 import '../css/Landing.css';
 
@@ -45,6 +47,19 @@ const Landing = () => {
 					alt="apple"
 					className="landing-logo selectDisable"
 				/>
+				{stockData.map((data,key) => {
+					return (
+						<div key={key}>
+							{data.company +
+								" , " +
+								data.ticker +
+								" ," +
+								data.stockPrice +
+								", " +
+								data.timeElapsed}
+							</div>
+					)	
+				})}
 			</div>
         </div>
         

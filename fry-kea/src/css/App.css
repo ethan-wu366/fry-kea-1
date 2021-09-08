@@ -8,6 +8,15 @@ p {
 	padding: 0;
 }
 
+.stock-container {
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: 3em;
+}
+.App {
+  text-align: center;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
