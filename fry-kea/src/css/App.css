@@ -1,3 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+p {
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+
 .App {
   text-align: center;
 }
