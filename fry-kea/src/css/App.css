@@ -2,11 +2,6 @@
 	box-sizing: border-box;
 }
 
-p {
-	color: #ffffff;
-	margin: 0;
-	padding: 0;
-}
 
 .stock-container {
   padding-left: 3em;

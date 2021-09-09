@@ -11,7 +11,7 @@ import Apple from '../img/apple-armchair.png';
 import Clementine from '../img/clementine-clock.png';
 import Starfruit from '../img/starfruit-stool.png';
 
-import Cards from './Cards';
+import Cards from '../Cards';
 
 const Landing = () => {
 	$(document).ready(function () {
@@ -42,6 +42,23 @@ const Landing = () => {
 	return (
         <div classname="landing">
             <SiteNavbar sticky="false" bg="transparent" />
+			<div class="card">
+        <div class="row no-gutters">
+            <div class="col-auto">
+                <img src={Apple} class="img-fluid" alt=""/>
+            </div>
+            <div class="col">
+                <div class="card-block px-2">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Description</p>
+                    <a href="#" class="btn btn-primary">BUTTON</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer w-100 text-muted">
+            Footer stating cats are CUTE little animals
+        </div>
+  </div>
             <p>Hello</p>
 			<Cards></Cards>
 			<div classname="rectangle top">
