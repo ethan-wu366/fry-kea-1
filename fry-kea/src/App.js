@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './css/App.css';
 
 import Landing from './components/Landing';
+import Listing from './components/Listing';
 import Card from './Cards';
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
       <Router>
         <Switch>
           <Route path="/">
+            <Landing />
+          </Route>
+          <Route path="/listing">
             <Landing />
           </Route>
         </Switch>
