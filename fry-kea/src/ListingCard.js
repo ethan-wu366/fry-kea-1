@@ -15,7 +15,7 @@ import data from './Data.json';
 
 
 
-              const newdata= data.listings.map(( data) => {
+              const newdata= data.listings.map((data) => {
                   return (
                     <a href="/listing">
                     <Card key= {data.id} text="black" style={{width:"20rem", height:"8rem"}}>

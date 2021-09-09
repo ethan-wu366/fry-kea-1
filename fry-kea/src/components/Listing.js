@@ -12,6 +12,7 @@ import Clementine from '../img/clementine-clock.png';
 import Starfruit from '../img/starfruit-stool.png';
 
 import Cards from '../Cards';
+import ListingCards from '../ListingCard';
 
 const Listing = () => {
 	$(document).ready(function () {
@@ -42,7 +43,7 @@ const Listing = () => {
 	return (
         <div classname="landing">
             <SiteNavbar sticky="false" bg="transparent" />
-			<Cards></Cards>
+			<ListingCards></ListingCards>
 			
         </div>
         
