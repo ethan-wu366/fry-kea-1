@@ -1,8 +1,6 @@
-* {
-	box-sizing: border-box;
+a {
+  color:black;
 }
-
-
 .stock-container {
   padding-left: 3em;
   padding-right: 3em;

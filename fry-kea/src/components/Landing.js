@@ -42,32 +42,15 @@ const Landing = () => {
 	return (
         <div classname="landing">
             <SiteNavbar sticky="false" bg="transparent" />
-			<div class="card">
-        <div class="row no-gutters">
-            <div class="col-auto">
-                <img src={Apple} class="img-fluid" alt=""/>
-            </div>
-            <div class="col">
-                <div class="card-block px-2">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Description</p>
-                    <a href="#" class="btn btn-primary">BUTTON</a>
-                </div>
-            </div>
-        </div>
-        <div class="card-footer w-100 text-muted">
-            Footer stating cats are CUTE little animals
-        </div>
-  </div>
-            <p>Hello</p>
 			<Cards></Cards>
-			<div classname="rectangle top">
-			<img
-					src={Apple}
-					alt="apple"
-					className="landing-logo selectDisable"
-				/>
-			</div>
+			<div class="card" style={{width: "18rem"}}>
+					<img src="Apple" class="card-img-top" alt="..."/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+					</div>
         </div>
         
         );

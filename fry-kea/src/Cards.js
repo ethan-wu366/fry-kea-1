@@ -17,11 +17,11 @@ import data from './Data.json';
 
               const newdata= data.listings.map(( data) => {
                   return (
-                    
-                    <Card key= {data.id} text="black">
+                    <a href="/listing">
+                    <Card key= {data.id} text="black" style={{width:"20rem", height:"8rem"}}>
                       <Card.Body>
                         <Card.Title>{ data.name}</Card.Title>
-                        <div classname="text-primary">
+                        <div>
                           <Card.Text >
                               {data.price}
                           </Card.Text>
@@ -33,7 +33,7 @@ import data from './Data.json';
 
                       </Card.Body>
                     </Card> 
-                    
+                    </a>
                   )
                 }
               )
@@ -42,9 +42,6 @@ import data from './Data.json';
 
 export default class Cards extends Component {
     render() {
-      const style = {
-        backgroundImage: Apple
-      };
         return (
             <CardColumns className=" m-3 p-3 owncard ">  {newdata}  </CardColumns>
            
