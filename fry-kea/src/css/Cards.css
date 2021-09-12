@@ -1,7 +1,19 @@
 .cards p {
-    color: yellow;
+    color: black;
   }
-
+.cards a {
+  color: black;
+}
 .cards black {
     color: black;
+}
+
+.cards out {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards child {
+  flex: 1 0 53%; 
+  margin: 5px;
 }

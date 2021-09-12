@@ -13,27 +13,31 @@ import Starfruit from './img/starfruit-stool.png';
 
 import data from './Data.json';
 
-
+  //function to get id 
+  /** data.image doesn't work, not linked to file
+   * Render Reviews with Array
+  */
 
               const newdata= data.listings.map((data) => {
                   return (
-                    <a href="/listing">
-                    <Card key= {data.id} text="black" style={{width:"20rem", height:"8rem"}}>
+                    
+                    <Card key= {data.id} text="black" style={{width:"30rem", height:"40rem"}}>
                       <Card.Body>
-                        <Card.Title>{ data.name}</Card.Title>
+                        <Card.Title>{data.name}</Card.Title>
+                        <Card.Text>Tags: {data.tags}</Card.Text>
+                        <Card.Text>Tags: {data.description}</Card.Text>
                         <div>
+                          <Card.Title>Reviews</Card.Title>
                           <Card.Text >
-                              {data.price}
+                              
                           </Card.Text>
                         
                           </div>
-                        <Card.Img variant="top" src={Starfruit}>
-
+                        <Card.Img variant="top" src={Apple}> 
                         </Card.Img>
-
+                        
                       </Card.Body>
-                    </Card> 
-                    </a>
+                    </Card>
                   )
                 }
               )
@@ -41,6 +45,17 @@ import data from './Data.json';
               
 
 export default class Cards extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      idNumber: null,
+    };
+  }
+  //handle visibility of other unclicked cards
+  handleSwitch(int) {
+    this.setState({ idNumber: int });
+  }
     render() {
         return (
             <CardColumns className=" m-3 p-3 owncard ">  {newdata}  </CardColumns>

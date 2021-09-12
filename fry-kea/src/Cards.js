@@ -17,23 +17,25 @@ import data from './Data.json';
 
               const newdata= data.listings.map(( data) => {
                   return (
+                    <div class="cards mb-2 child">
                     <a href="/listing">
-                    <Card key= {data.id} text="black" style={{width:"20rem", height:"8rem"}}>
+                    <Card key= {data.id} text="black" style={{ width: '18rem' }}>
                       <Card.Body>
                         <Card.Title>{ data.name}</Card.Title>
                         <div>
                           <Card.Text >
                               {data.price}
                           </Card.Text>
-                        
                           </div>
                         <Card.Img variant="top" src={Starfruit}>
-
                         </Card.Img>
-
+                        <Card.Text>
+                          {data.stocked}
+                        </Card.Text>
                       </Card.Body>
                     </Card> 
                     </a>
+                    </div>
                   )
                 }
               )
